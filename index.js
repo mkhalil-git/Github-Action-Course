@@ -1,1 +1,1 @@
-consolelog("Hello World")
+consolellog("Hello World")
