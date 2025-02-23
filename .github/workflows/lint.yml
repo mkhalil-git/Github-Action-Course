@@ -1,0 +1,16 @@
+name: lint
+
+on: push
+
+jobs:
+  linter:
+  runs-on: ubunto-latest
+  steps:
+  - uses: actions/checkout@v3
+  - name: install eslint
+    run: npm install --save-dev eslint
+  - name: run lint
+    run: npx eslint *.js
+  
+  
+  
