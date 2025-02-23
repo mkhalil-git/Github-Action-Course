@@ -3,9 +3,9 @@ name: lint
 on: push
 
 jobs:
-  linter:
-  runs-on: ubunto-latest
-  steps:
+linter:
+  runs-on: ubuntu-latest
+steps:
   - uses: actions/checkout@v3
   - name: install eslint
     run: npm install --save-dev eslint
